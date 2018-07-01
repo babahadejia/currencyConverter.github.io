@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Free Currency Converter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1 style="color: #7ed321" align="center">Currency Converter</h1>
+  </div>
+  <form>
+    <div class="row">
+      <h4>From</h4>
+      <div class="">
+        <div class="input-group">
+            <select id="fromCurrency">
+              <option value="">Select Currency From</option>
+                <option value="USD">US Dollar</option>
+                        <option value="EUR">Euro</option>
+                        <option value="ZAR">Rand</option>
+                        <option value="KES">Kenyan Shilling</option>
+                        <option value="AED">UAE Dirham</option>
+                        <option value="GBP">Pound Sterling</option>
+                        <option value="ARS">Argentine Peso</option>
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="BRL">Brazilian Real</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="CNY">Yuan Renminbi</option>
+                        <option value="MXN">Mexican Peso</option>
+                        <option value="NGN">Naira</option>
+                        <option value="NZD">New Zealand Dollar</option>
+                        <option value="DKK">Danish Krone</option>
+                        <option value="EGP">Egyptian Pound</option>
+                        <option value="ETB">Ethiopian Birr</option>
+                        <option value="FJD">Fiji Dollar</option>
+                        <option value="PHP">Philippine Peso</option>
+                        <option value="HKD">Hong Kong Dollar</option>
+                        <option value="QAR">Qatari Rial</option>
+                        <option value="ISK">Iceland Krona</option>
+                        <option value="INR">Indian Rupee</option>
+                        <option value="RUB">Russian Ruble</option>
+                        <option value="XCD">East Caribbean Dollar</option>
+                        <option value="SAR">Saudi Riyal</option>
+                        <option value="JPY">Yen</option>
+                        <option value="SGD">Singapore Dollar</option>
+                        <option value="SEK">Swedish Krona</option>
+                        <option value="TZS">Tanzanian Shilling</option>
+                        <option value="TRY">Turkish Lira</option>
+                        <option value="UGX">Uganda Shilling</option>
+                        <option value="ZWL">Zimbabwe Dollar</option>
+                        <option value="CHF">Swiss Franc</option>
+          </select>
+        </div>
+      </div>
+      <div class="">
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="Amount" id="amount"/>
+          <div class="input-icon"><i class="fa fa-dollar"></i></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+        <h4>To</h4>
+      <div class="">
+        <div class="input-group">
+            <select id="toCurrency">
+              <option value="">Select Currency To</option>
+                <option value="USD">US Dollar</option>
+                        <option value="EUR">Euro</option>
+                        <option value="ZAR">Rand</option>
+                        <option value="KES">Kenyan Shilling</option>
+                        <option value="AED">UAE Dirham</option>
+                        <option value="GBP">Pound Sterling</option>
+                        <option value="ARS">Argentine Peso</option>
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="BRL">Brazilian Real</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="CNY">Yuan Renminbi</option>
+                        <option value="MXN">Mexican Peso</option>
+                        <option value="NGN">Naira</option>
+                        <option value="NZD">New Zealand Dollar</option>
+                        <option value="DKK">Danish Krone</option>
+                        <option value="EGP">Egyptian Pound</option>
+                        <option value="ETB">Ethiopian Birr</option>
+                        <option value="FJD">Fiji Dollar</option>
+                        <option value="PHP">Philippine Peso</option>
+                        <option value="HKD">Hong Kong Dollar</option>
+                        <option value="QAR">Qatari Rial</option>
+                        <option value="ISK">Iceland Krona</option>
+                        <option value="INR">Indian Rupee</option>
+                        <option value="RUB">Russian Ruble</option>
+                        <option value="XCD">East Caribbean Dollar</option>
+                        <option value="SAR">Saudi Riyal</option>
+                        <option value="JPY">Yen</option>
+                        <option value="SGD">Singapore Dollar</option>
+                        <option value="SEK">Swedish Krona</option>
+                        <option value="TZS">Tanzanian Shilling</option>
+                        <option value="TRY">Turkish Lira</option>
+                        <option value="UGX">Uganda Shilling</option>
+                        <option value="ZWL">Zimbabwe Dollar</option>
+                        <option value="CHF">Swiss Franc</option>
+          </select>
+        </div>
+      </div>
+        <div class="">
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="" id="reslt" readonly/>
+          <div class="input-icon"><i class="fa fa-dollar"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+          <input type="button" id="process" value="Convert" onclick="currencyConvert()"/>
+      </div>
+    </div>
+  </form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+    <script  src="js/iDB.js"></script>
+    <script  src="js/currencyConvert.js"></script>
+    <script  src="js/sw.js"></script>
+</body>
+
+</html>
